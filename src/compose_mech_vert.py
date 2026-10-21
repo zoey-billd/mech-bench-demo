@@ -94,7 +94,7 @@ def sec_title(t):
         ("1 次刚体落体", "球落进抽出的托盘，检验碰撞体", TEAL),
     ]
     y = 632
-    reveal = min(len(rows), int(t / 0.75) + 1)
+    reveal = min(len(rows), int(t / 0.42) + 1)
     for label, note, colour in rows[:reveal]:
         d.rounded_rectangle([MARGIN, y, W - MARGIN, y + 148], radius=12,
                             fill=(255, 255, 255, 8), outline=(255, 255, 255, 16))
